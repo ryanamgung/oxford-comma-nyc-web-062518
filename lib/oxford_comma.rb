@@ -1,6 +1,8 @@
 def oxford_comma(array)
-  special = array[array.length - 1]
+  last = array.last
+  array.pop
   string = array.join(", ")
+  string << ", and #{last}"
   
   
 end
